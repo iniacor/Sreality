@@ -27,7 +27,7 @@ router.get('/apartments', async (req, res) => {
     images[apartment.id] = apartmentImages;
   }
 
-  const imagesApartments = apartments.map((apartment) => {
+  const imagesApartments = apartments.map(apartment => {
     return {
       ...apartment,
       images: images[apartment.id],
@@ -40,4 +40,4 @@ router.get('/apartments', async (req, res) => {
   });
 });
 
-router.listen(3000);
+router.listen(4000);
