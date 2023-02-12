@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "NODE_ENV=production node ./index.js",
+    "start": "NODE_ENV=development node ./parser/index.js && echo 'Script started.'",
     "dev": "NODE_ENV=development nodemon ./index.js",
     "test": "jest",
     "test:watch": "jest --watchAll",
