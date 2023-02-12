@@ -1,14 +1,14 @@
 export interface Apartment {
-  id: Number;
-  title: String;
-  location: String;
-  price: String;
+  id: number;
+  title: string;
+  location: string;
+  price: string;
   images: Image[];
 }
 
 export interface Image {
-  id: Number;
-  src: String;
-  apartment: String;
-  apartmentId: Number;
+  id: number;
+  src: string;
+  apartment: string;
+  apartmentId: number;
 }

@@ -7,6 +7,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import parse from 'autosuggest-highlight/parse';
 import { debounce } from '@mui/material/utils';
+import { useTheme } from '@mui/material';
 
 // This key was created specifically for the demo in mui.com.
 // You need to create a new one for your application.
@@ -45,6 +46,7 @@ export default function GoogleMaps() {
   const [inputValue, setInputValue] = React.useState('');
   const [options, setOptions] = React.useState<readonly PlaceType[]>([]);
   const loaded = React.useRef(false);
+  const theme = useTheme();
 
   if (typeof window !== 'undefined' && !loaded.current) {
     if (!document.querySelector('#google-maps')) {
@@ -105,7 +107,12 @@ export default function GoogleMaps() {
   return (
     <Autocomplete
       id="google-map-demo"
-      sx={{ width: 300 }}
+      sx={{
+        width: 300,
+        [theme.breakpoints.down('sm')]: {
+          display: 'none',
+        },
+      }}
       getOptionLabel={option => (typeof option === 'string' ? option : option.description)}
       filterOptions={x => x}
       options={options}
