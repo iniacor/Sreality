@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "esnext",
+    "lib": ["ESNext", "dom", "dom.iterable"],
+    "allowJs": true,
+    "jsx": "react",
+    "noEmit": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@mui/styled-engine": ["./node_modules/@mui/styled-engine-sc"], // this mapping is relative to "baseUrl"
+      "@components/*": ["src/components/*"],
+      "@entities/*": ["src/entities/*"],
+      "@common/*": ["src/common/*"],
+      "@theme/*": ["src/theme/*"],
+      "@theme": ["src/theme"]
+    },
+    /* Strict Type-Checking Options */
+    "strict": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "out"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "src"]
+}
