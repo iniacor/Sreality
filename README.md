@@ -1,6 +1,6 @@
 # 🏘️ Czech Republic apartments project
 
-### _React-powered application for visualisation apartments for sale
+### React-powered application for visualisation apartments for sale
 
 ## ⚙️ Used technologies:
 
