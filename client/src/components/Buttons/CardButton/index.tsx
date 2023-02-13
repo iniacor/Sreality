@@ -2,15 +2,13 @@ import { Button, ButtonProps } from '@mui/material';
 import React from 'react';
 import styled from 'styled-components';
 
-const AuthenticationButton = styled((props: ButtonProps) => (
-  <Button variant="outlined" {...props} />
-))`
-  color: ${({ theme }) => theme.palette.primary.contrastText};
-  background-color: ${({ theme }) => theme.palette.primary.main};
+const PhoneButton = styled((props: ButtonProps) => <Button variant="outlined" {...props} />)`
+  color: ${({ theme }) => theme.palette.primary.main};
+  background-color: ${({ theme }) => theme.palette.background.default};
 
   &:hover {
-    background-color: ${({ theme }) => theme.palette.primary.dark};
+    background-color: ${({ theme }) => theme.palette.primary.light};
   }
 `;
 
-export default AuthenticationButton;
+export default PhoneButton;

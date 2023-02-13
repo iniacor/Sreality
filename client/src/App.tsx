@@ -1,14 +1,3 @@
-// import React from 'react';
-// import SearchPage from './searchPage/SearchPage';
-
-// const App: React.FC = () => (
-//   <ThemeProvider theme={theme} emotionCache={emotionCache}>
-//     <SearchPage />
-//   </ThemeProvider>
-// );
-
-// export default App;
-
 import * as React from 'react';
 import { EmotionCache } from '@emotion/react';
 import SearchPage from './searchPage/SearchPage';

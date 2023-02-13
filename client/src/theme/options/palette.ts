@@ -17,9 +17,9 @@ declare module '@mui/material/styles/createPalette' {
 
 const palette = {
   primary: {
-    main: '#3f51b5', // add change
-    light: '#6573c3', // add change
-    dark: '#2c387e', // add change
+    main: '#3f51b5',
+    light: '#6573c3',
+    dark: '#2c387e',
     contrastText: common.white,
   },
   support: {
@@ -33,9 +33,9 @@ const palette = {
     yellow: '#ffcd00',
   },
   secondary: {
-    main: '#651fff', // add change
-    light: '#834bff', // add change
-    dark: '#4615b2', // add change
+    main: '#651fff',
+    light: '#834bff',
+    dark: '#4615b2',
     contrastText: common.white,
   },
   background: {
