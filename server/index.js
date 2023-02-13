@@ -40,4 +40,4 @@ router.get('/apartments', async (req, res) => {
   });
 });
 
-router.listen(4000);
+router.listen(3000);
