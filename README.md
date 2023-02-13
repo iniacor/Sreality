@@ -21,8 +21,8 @@
 
 ## Installation
 You can run this project locally just do:  
-clone branch  ```master``` with ```git clone https://github.com/iniacor/Sreality.git``` or fork it and then clone it from your forked repo
-install to your local mashine postgreSQL and create new db. Database name: postgres/ user: postgres/ password: postgres
+Clone branch  ```master``` with ```git clone https://github.com/iniacor/Sreality.git``` or fork it and then clone it from your forked repo. 
+Install to your local mashine postgreSQL and create new db. Database name: postgres/ user: postgres/ password: postgres
 
 1) Move to the folder server, install all dependencies (npm i) then go to folder parser and run cli command : npm start, and wait until parsing end
 
